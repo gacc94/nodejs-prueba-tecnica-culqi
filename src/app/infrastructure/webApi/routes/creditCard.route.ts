@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { creditCardController } from "../controllers/credit-card.controller";
-import { creditCardValidator } from "../middlewares/creditcard-validator.middleware";
-import { getCardType } from "../middlewares/getcard-type.middleware";
-import { pkValidator } from "../middlewares/pk-validator.middleware";
+import { creditCardController } from "../controllers/creditCard.controller";
+import { creditCardValidator } from "../middlewares/creditCardValidator.middleware";
+import { getCardType } from "../middlewares/getCardType.middleware";
+import { pkValidator } from "../middlewares/pkValidator.middleware";
 export const router = Router();
 
 router.get("/getTokens", creditCardController.getTokens.bind(creditCardController));

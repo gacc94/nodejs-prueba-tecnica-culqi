@@ -1,6 +1,6 @@
 export enum CardType {
-    VISA = "VISA",
-    MASTERCARD = "MASTERCARD",
-    AMEX = "AMEX",
-    DESCONOCIDO = "DESCONOCIDO",
+  VISA = "VISA",
+  MASTERCARD = "MASTERCARD",
+  AMEX = "AMEX",
+  DESCONOCIDO = "DESCONOCIDO",
 }

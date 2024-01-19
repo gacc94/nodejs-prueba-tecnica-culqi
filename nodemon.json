@@ -1,13 +1,6 @@
 {
-  "watch": ["src/", ".env"],
-  "ext": "ts json",
-  "env": {
-    "NODE_ENV": "development"
-  },
-  "ignore": ["node_modules"],
-  "execMap": {
-    "ts": "ts-node"
-  },
-  "verbose": true,
-  "restartable": "rs"
+  "watch": ["src",".env"],
+  "ext": "ts",
+  "ingore": ["src/**/*.spec.ts"],
+  "exec": "ts-node ./src/index.ts"
 }

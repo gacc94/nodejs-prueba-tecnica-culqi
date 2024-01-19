@@ -1,43 +1,45 @@
 {
   "name": "nodejs-prueba-tecnica-culqi",
   "version": "1.0.0",
-  "description": "",
+  "description": "api",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon src/index.ts"
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "ts:node": "ts-node src/index.ts",
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "start": "node dist",
+    "dev": "nodemon",
+    "scanner": "docker run -e SONAR_HOST_URL=\"http://sonarqube:9000\" --network=\"sonar-cloud_sonarnet\" --user=\"$(id -u):$(id -g)\" -it -v \"$PWD:/usr/src\" sonarsource/sonar-scanner-cli"
   },
-  "engines": {
-    "node": "18.18.0"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/body-parser": "^1.19.5",
-    "@types/cors": "^2.8.17",
-    "@types/crypto-js": "^4.2.1",
-    "@types/express": "^4.17.21",
-    "@types/jest": "^29.5.11",
-    "@types/jsonwebtoken": "^9.0.5",
-    "@types/node": "^20.11.5",
-    "@types/supertest": "^6.0.2",
-    "dotenv": "^16.3.1",
-    "jest": "^29.7.0",
-    "nodemon": "^3.0.3",
-    "supertest": "^6.3.4",
-    "ts-jest": "^29.1.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "@types/body-parser": "^1.19.2",
+    "@types/cors": "^2.8.13",
+    "@types/crypto-js": "^4.1.1",
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.4.0",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/supertest": "^2.0.12",
+    "dotenv": "^16.0.3",
+    "jest": "^29.4.3",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
-    "celebrate": "^15.0.3",
+    "celebrate": "^15.0.1",
     "cors": "^2.8.5",
-    "crypto-js": "^4.2.0",
+    "crypto-js": "^4.1.1",
     "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.2",
+    "jsonwebtoken": "^9.0.0",
     "luhn": "^2.4.1",
-    "mongoose": "^8.1.0",
-    "node-mocks-http": "^1.14.1"
+    "mongoose": "^7.0.5",
+    "node-mocks-http": "^1.12.2"
   }
 }

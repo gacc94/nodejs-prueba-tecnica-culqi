@@ -1,6 +1,6 @@
 import { config } from "./config";
 import express from 'express';
-import { expressLoader } from "./app/infrastructure/webApi/loaders/express";
+import { expressLoader } from "./app/infrastructure/api/loaders/express";
 import { log } from "./app/infrastructure/shared/log";
 import { connectMongoDb } from "./app/infrastructure/database/mongodb/database";
 

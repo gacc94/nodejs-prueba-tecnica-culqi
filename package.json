@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon"
+    "start:dev": "nodemon src/index.ts"
   },
   "engines": {
     "node": "18.18.0"

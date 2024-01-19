@@ -1,0 +1,27 @@
+version: '3'
+services:
+  nodejs-app:
+    container_name: nodejs-app
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    env_file:
+      - .env
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongodb
+    environment:
+      MONGODB_URI: mongodb://mongodb:27017/culqi
+    volumes:
+      - mongodb_data:/data/db
+      - .:/srv/app
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+volumes:
+  mongodb_data:

@@ -1,3 +1,1 @@
-export interface IBootstrap {
-    initialize(): Promise<boolean>;
-}
+console.log('Hello world');

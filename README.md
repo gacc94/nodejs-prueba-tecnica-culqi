@@ -37,7 +37,12 @@ Enviamos mediante el metodo post al endpoint **/api/v1/creditCard/sign** el sigu
   "card_number": "4111111111111111"
 }
 ```
-![Token de Tarjeta de Credito](https://github.com/maximopeoficiales/node-ts-prueba-tecnica-culqi/blob/master/imgs/sign.png?raw=true)
+![Token de Tarjeta de Credito](https://github.com/gacc94/nodejs-prueba-tecnica-culqi/blob/main/imgs/sign.png?raw=true)
+
+Luego utilizamos el siguiente endpoint con el metodo POST **/api/v1/creditCard/verify**
+y enviamos el token por el Header de tipo Bearer
+![Verificacion de Token](https://github.com/gacc94/nodejs-prueba-tecnica-culqi/blob/main/imgs/verify.png?raw=true)
+
 
 ##  4) Ejecutar Test
 Se ejecutan pruebas unitarias

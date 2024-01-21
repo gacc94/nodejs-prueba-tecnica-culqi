@@ -6,7 +6,7 @@ export class TokenizationRepository {
     private model = TokenizationModel
   ) { }
   async getAll() {
-    return await this.model.find().sort({ createdAt: -1 });
+    return this.model.find().sort({ createdAt: -1 });
   };
   async create(data: Tokenization) {
     const newUser = new this.model(data);

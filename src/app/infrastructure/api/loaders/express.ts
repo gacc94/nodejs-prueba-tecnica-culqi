@@ -6,7 +6,7 @@ import { config } from "../../../../config";
 import { router as routes } from '../routes';
 import { errorHandler } from "../middlewares/global.middleware";
 
-export const expressLoader = async (app: Express) => {
+export const expressLoader = async (app: any) => {
   const corsOptions = {
     origin: config.APP_ORIGIN
   }

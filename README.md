@@ -1,7 +1,7 @@
-# Prueba Tecnica - Tokenizacion de Tarjeta de Credito 👋
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
-[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/gacc94/nodejs-prueba-tecnica-culqi/tree/main)
-[![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](#)
+<h1 align="center">🚀</h1>
+<hr>
+<h1 align="center">Prueba Tecnica - Tokenizacion de Tarjeta de Credito</h1>
+<hr>
 
 ## Instalaciones Necesarias
 * MongoDB
